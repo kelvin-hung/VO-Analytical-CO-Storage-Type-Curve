@@ -26,7 +26,7 @@ kh    = st.sidebar.slider("kh [mD]", 1.0, 2000.0, 150.0, 1.0)
 kvkh  = st.sidebar.slider("kv/kh [-]", 0.05, 1.0, 0.5, 0.01)
 h_m   = st.sidebar.slider("Net thickness h [m]", 10.0, 300.0, 120.0, 5.0)
 qinj  = st.sidebar.slider("q_inj [10³ Sm³/d]", 25.0, 10000.0, 600.0, 25.0)
-c_r = st.slider("Rock compressibility [1/psi]", 
+c_r = st.sidebar.slider("Rock compressibility [1/psi]", 
                min_value=1e-6, 
                max_value=2e-5, 
                value=1e-5, 
@@ -301,6 +301,7 @@ plt.savefig("fig_typecurve_components_physical_units.png", dpi=300)
 plt.close()
 
 print("Saved: fig_typecurve_components_physical_units.png")
+
 
 
 
